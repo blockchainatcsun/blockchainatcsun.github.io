@@ -1,0 +1,221 @@
+/*===== default css  =====*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+/*===== default css  =====*/
+html{
+  scroll-behavior: smooth;
+}
+*{
+	padding: 0;
+	margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.containt{
+  width: 100%;
+  margin: auto;
+}
+
+.size{
+	max-width: 1200px;
+	width: 80%;
+	margin: auto;
+}
+
+.banner{
+	width: 100%;
+	height: 730px;
+	background:url('img/bg_splash.jpg');
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	background-repeat: no-repeat;
+}
+
+.wrapper{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.banner-text{
+	margin:-6% 0 0 0;
+	text-align: center;
+}
+.banner-text h1{
+	font-weight: 500;
+	color: white;
+	letter-spacing: 1px;
+	font-size: 52px;
+}
+
+.banner-text h2{
+	font-weight: 500;
+	color: white;
+	font-size: 45px;
+	line-height: 70px;
+} 
+
+
+
+.btnn{
+	display: block;
+    background: #c8102e;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 17px 32px;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid #c8102e;
+    margin: 6% 0 7% 0;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    transform: scale(1.0);
+
+}
+
+.btnn:hover{
+	background: white;
+	color: #c8102e;
+}
+
+/*=================about us=====================*/
+
+.box{
+	background: white;
+	border: 1px solid #000;
+	text-align: center;
+	padding: 10% 0 7% 0;
+	margin-top: -7%;
+	margin-bottom: 10%;
+	/*box-shadow: 5px 10px 25px #ececec;*/
+}
+.about-text h1{
+	color: black;
+	padding: 0 0 5% 0;
+	font-weight: 400;
+	font-family: 'Alegreya Sans';
+}
+
+.about-text p{
+	padding: 2% 18%;
+	font-size: 16px;
+	color: black;
+	font-weight: 400;
+	font-family: 'Alegreya Sans';
+	line-height: 30px;
+}
+/*===========logo===============*/
+.logo{
+	text-align: center;
+	padding-bottom: 5%;
+}
+
+/*=======================footer========================*/
+.wraper{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.mini{
+	display: block;
+	transform: scale(1.0);
+	transition: 0.6s;
+}
+.mini:hover{
+	transform: scale(1.1);
+}
+.contact{
+	text-align: right;
+	color: white;
+	letter-spacing: 1px;
+	cursor: pointer;
+	font-weight: 300;
+	transition: 0.6s;
+}
+.contact:hover{
+	color: #c8102e;
+}
+
+.footer{
+	background: black;
+	padding:3% 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+.modal-body{
+	text-align: center;
+}
+
+.form-control{
+	margin-bottom: 5%;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #ccc;
+}
+.form-control:hover,.aria-text:hover{
+	border-bottom: 1px solid #c8102e;
+}
+.aria-text{
+	width: 100%;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #ccc;
+	height: 200px;
+
+}
+
+/*===== Mobile, tab and medium & small device =====*/
+@media screen and (max-width: 768px)
+{
+	/*===== start Mobile css =====*/
+	.wraper,.wrapper{
+		grid-template-columns: 1fr;
+	}
+	.size{
+		width: 90%;
+	}
+	.banner{
+		height: auto;
+		padding: 20% 0;
+	}
+	.banner-text h1{
+		font-size: 25px;
+	}
+	.banner-text h2{
+		font-size: 18px;
+		line-height: 30px;
+	}
+	.btnn{
+		padding:14px 28px;
+		font-size: 13px;letter-spacing: 1px;margin: 10% 0 7% 0;
+	}
+	.about-text p{
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    padding: 4% 3%;
+
+	}
+	.hr{
+		margin: 3% 33% 0 33%;
+	}
+	.logo img{
+		width: 100%;
+	}
+  .contact{ text-align: center; padding: 1% 0 0 0; }
+	.wraper{
+		text-align: center;
+		padding: 6% 0;
+	}
+	.modal-content{
+		width: 100%;
+	}
+	
+	
+}
